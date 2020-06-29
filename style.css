@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+    --dark: #2f3640;
+    --white: #ffffff;
+    --yellow: #f1c40f;
+    --blue: #00a8ff;
+    --green: #4cd137;
+    --purple: #8c7ae6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    background: #28858f;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    width: fit-content;
+    margin: 10px auto;
+    color: #f1c40f;
+    font-size: 7em;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+.board-btn {
+    width: 250px;
+    height: 250px;
+    background: var(--yellow);
+    border: solid 1pxvar (--white);
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px40px;
+    font-size: 3em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 08px16px0rgba (0, 0, 0, 0.2), 06px20px0rgba (0, 0, 0, 0.19);
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--dark);
+    transition-duration: 0.4s;
+}
+#blue.light {
+    background: #7ed6df;
+}
+#purple.light {
+    background: #be2edd;
+}
+#yellow.light {
+    background: rgb(226, 226, 61);
+}
+#green.light {
+    background: rgb(181, 238, 69);
+}
+#blue {
+    background: var(--blue);
+    border-top-left-radius: 100%;
+}
+
+#purple {
+    background: var(--purple);
+    border-top-right-radius: 100%;
+}
+
+#yellow {
+    background: var(--yellow);
+    border-bottom-left-radius: 100%;
+}
+
+#green {
+    background: var(--green);
+    border-bottom-right-radius: 100%;
+}
+
+.hide {
+    display: none;
+}
